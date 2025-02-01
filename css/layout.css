@@ -54,3 +54,10 @@ body{
   background: linear-gradient(to right, var(--bg-gradient3), var(--bg-gradient4));
   color: var(--blue);
 }
+ul,ol{
+  margin-left: 0;
+  padding-left: 1.25rem;
+}
+ul li,ol li{
+  margin-bottom: 0.5rem;
+}
