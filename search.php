@@ -10,8 +10,8 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
+	<main id="primary" class="site-main light-section">
+		<div class="container">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -43,11 +43,11 @@ get_header();
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
-
+			endif;
+			?>
+		</div>
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

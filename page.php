@@ -15,8 +15,8 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
+	<main id="primary" class="site-main light-section">
+		<div class="container">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -28,11 +28,11 @@ get_header();
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.
-		?>
-
+			endwhile; // End of the loop.
+			?>
+		</div>
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();
