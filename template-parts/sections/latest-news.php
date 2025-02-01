@@ -12,7 +12,8 @@ $hero_banner_query = new WP_Query(array(
     $category = get_category_by_slug('actualites');
     echo $category->name; 
 ?></h3>
-
+<!-- News Grid -->
+<h2>Les dernières informations</h2>
         <div class="news-grid">
             <?php
             if ($hero_banner_query->have_posts()) :

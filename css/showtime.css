@@ -1,4 +1,5 @@
 .showtime{
+    padding: 0 0 4rem 0;
     .wp-block-column{
         display: flex;
         flex-direction: column;

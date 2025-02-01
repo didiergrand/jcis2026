@@ -45,7 +45,12 @@
 					<p class="site-description"><?php echo $jcis_forum_2026_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'jcis-forum-2026' ); ?></button>
+
+			<button class="menu-toggle hamburger-lines" aria-controls="primary-menu" aria-expanded="false">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</button>
 
 			<nav id="site-navigation" class="main-navigation">
 				<?php
