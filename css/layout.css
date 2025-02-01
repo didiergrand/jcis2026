@@ -65,7 +65,10 @@ ul li,ol li{
   background-color:var(--white);
 }
 .wp-block-gallery figure {
-  padding: 50px;
+  padding: 10px;
+  @media only screen and (min-width: 768px) {
+    padding: 50px;
+  }
   aspect-ratio: 1;
   flex-grow: unset !important;
 }
