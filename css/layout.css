@@ -61,9 +61,12 @@ ul,ol{
 ul li,ol li{
   margin-bottom: 0.5rem;
 }
+.wp-block-gallery{
+  background-color:var(--white);
+}
 .wp-block-gallery figure {
   padding: 50px;
-  background-color:var(--white);
   display: flex;
   aspect-ratio: 1;
+  flex-grow: unset;
 }
