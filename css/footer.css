@@ -1,6 +1,10 @@
 .footer-widgets-area{
     background-color: var(--white);
+    color: var(--blue);
+}
+.sponsors-logos{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }

@@ -50,5 +50,5 @@ body{
 .light-section{
   background: linear-gradient(to right, var(--bg-gradient3), var(--bg-gradient4));
   color: var(--blue);
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }

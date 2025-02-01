@@ -11,7 +11,7 @@ if ($hero_banner_query->have_posts()) :
 <div class="light-section">
 <section class="tickets">
     <div class="container">
-        <h3><?php the_title(); ?></h3>
+        <h3 class="mini-title"><?php the_title(); ?></h3>
         <p><?php the_content(); ?></p>
     </div>
 </section>

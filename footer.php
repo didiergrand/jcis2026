@@ -16,7 +16,9 @@
 			<div class="footer-widgets-area">
 				<div class="container">
 					<h2>Sponsors</h2>
-					<?php dynamic_sidebar( 'footer-widgets' ); ?>
+					<div class="sponsors-logos">
+						<?php dynamic_sidebar( 'footer-widgets' ); ?>
+					</div>
 				</div>
 			</div>
 		<?php endif; ?>

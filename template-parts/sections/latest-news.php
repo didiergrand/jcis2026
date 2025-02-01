@@ -8,10 +8,10 @@ $hero_banner_query = new WP_Query(array(
 <section class="news">
     <div class="container">
 <!-- Title -->
-<h2><?php 
+<h3 class="mini-title"><?php 
     $category = get_category_by_slug('actualites');
     echo $category->name; 
-?></h2>
+?></h3>
 
         <div class="news-grid">
             <?php

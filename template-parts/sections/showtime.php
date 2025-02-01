@@ -10,7 +10,6 @@ if ($hero_banner_query->have_posts()) :
 ?>
 <section class="showtime">
     <div class="container">
-        <h3><?php the_title(); ?></h3>
         <p><?php the_content(); ?></p>
     </div>
 </section>
