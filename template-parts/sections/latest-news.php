@@ -40,7 +40,6 @@ $hero_banner_query = new WP_Query(array(
         </div>
     </div>
 </section>
-?>
 
 
 
