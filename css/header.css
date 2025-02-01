@@ -17,9 +17,6 @@
     padding: 0 1rem;
 }
 
-.site-branding {
-}
-
 .site-branding img {
     width: 20rem;
     @media screen and (min-width: 1025px) {
@@ -38,8 +35,18 @@
     margin-left: auto; /* Pushes nav to the right */
 }
 .main-navigation ul{
-    gap: 2rem;
-    margin: 0 4rem 0 0;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 1024px) {
+        margin: 0 4rem 0 0;
+        flex-direction: row;
+    }
+    li{
+        padding: 1rem;
+    }
+    li a:hover{
+        color: var(--pink-400) !important;
+    }
 }
 /* Primary menu styling */
 #primary-menu {
