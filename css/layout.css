@@ -1,0 +1,54 @@
+body{
+    color: var(--white);
+    background: linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
+  }
+  a{
+    color: var(--pink);
+  }
+  a:hover{
+    color: var(--pink-800);
+  }
+  a:active{
+    color: var(--pink-900);
+  }
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    @media only screen and (min-width: 768px) {
+      padding: 0 2rem;
+    }
+  }
+  .mobile{
+    display: block;
+  }
+  @media only screen and (min-width: 768px) {
+    .mobile{
+      display: none;
+    }
+  }
+
+  .wp-block-button__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-family: AlumniSansBold;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+.wp-block-button__link:hover{
+    background-color: var(--pink-900);
+    color: var(--white);
+}
+.light-section{
+  background: linear-gradient(to right, var(--bg-gradient3), var(--bg-gradient4));
+  color: var(--blue);
+  padding: 2rem 0;
+}

@@ -1,0 +1,63 @@
+.hero-banner{
+    position: relative;
+    background: linear-gradient(62deg, rgba(22,20,55,1) 13%, rgba(17,47,92,1) 31%, rgba(5,4,12,1) 70%);
+    color: var(--white);
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1rem;
+    @media screen and (min-width: 768px) {
+        height: 40rem;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: url('../images/clap.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-position: 0rem 7rem;
+        background-size: 20rem auto;
+        @media only screen and (min-width: 768px) { 
+            background-position: 13rem center;
+            background-size: 60rem auto;
+        }
+        @media only screen and (min-width: 1200px) {
+            background-position: 90% center;
+        }
+
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .clap.mobile{
+        height: 8rem;
+    }
+    h2{    
+        font-size: 6rem;
+        font-family: "AlumniSansBold";
+        font-weight: bold;
+        line-height: 0.7;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        width: 20rem;
+        @media only screen and (min-width: 768px) { 
+            font-size: 8rem;
+            width: 25rem;
+            margin: 3rem 0;
+        }
+    }
+    p{
+        @media only screen and (min-width: 640px) { 
+            width: 25rem;
+        }
+        position: relative;
+        z-index: 2;
+    }
+}

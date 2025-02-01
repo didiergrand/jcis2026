@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandeau défilant</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .marquee-container {
+      position: relative;
+      overflow: hidden;
+      background-color: #ff0099;
+      color: white;
+      white-space: nowrap;
+      padding: 10px 0;
+    }
+
+    .marquee-content {
+      display: flex;
+      animation: marquee 30s linear infinite;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .marquee-text {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 10px; /* Espace entre les blocs duplicés */
+    }
+
+    .outline {
+      font-size: 22px;
+      letter-spacing: 1px;
+      text-shadow: 
+        -1px -1px 0 rgb(255, 255, 255), 
+        1px -1px 0 rgb(255, 255, 255),  
+        -1px 1px 0 rgb(255, 255, 255),  
+        1px 1px 0 rgb(255, 255, 255);   
+      color: #ff0099;
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee-container">
+    <div class="marquee-content">
+        <div class="marquee-text">
+          ⭐ <span class="outline">CHÂTEL-SAINT-DENIS</span> ⭐ 20 ET 21 MARS 2026 ⭐ <span class="outline">MOTEUR ACTION !</span>
+        </div>
+        <div class="marquee-text">
+          ⭐ CHÂTEL-SAINT-DENIS ⭐ <span class="outline">20 ET 21 MARS 2026</span> ⭐ MOTEUR ACTION !
+        </div>
+        <div class="marquee-text">
+          ⭐ <span class="outline">CHÂTEL-SAINT-DENIS</span> ⭐ 20 ET 21 MARS 2026 ⭐ <span class="outline">MOTEUR ACTION !</span>
+        </div>
+        <div class="marquee-text">
+          ⭐ CHÂTEL-SAINT-DENIS ⭐ <span class="outline">20 ET 21 MARS 2026</span> ⭐ MOTEUR ACTION !
+        </div>
+        <div class="marquee-text">
+          ⭐ <span class="outline">CHÂTEL-SAINT-DENIS</span> ⭐ 20 ET 21 MARS 2026 ⭐ <span class="outline">MOTEUR ACTION !</span>
+        </div>
+        <div class="marquee-text">
+          ⭐ CHÂTEL-SAINT-DENIS ⭐ <span class="outline">20 ET 21 MARS 2026</span> ⭐ MOTEUR ACTION !
+        </div>
+        <div class="marquee-text">
+          ⭐ <span class="outline">CHÂTEL-SAINT-DENIS</span> ⭐ 20 ET 21 MARS 2026 ⭐ <span class="outline">MOTEUR ACTION !</span>
+        </div>
+        <div class="marquee-text">
+          ⭐ CHÂTEL-SAINT-DENIS ⭐ <span class="outline">20 ET 21 MARS 2026</span> ⭐ MOTEUR ACTION !
+        </div>
+        <div class="marquee-text">
+          ⭐ <span class="outline">CHÂTEL-SAINT-DENIS</span> ⭐ 20 ET 21 MARS 2026 ⭐ <span class="outline">MOTEUR ACTION !</span>
+        </div>
+        <div class="marquee-text">
+          ⭐ CHÂTEL-SAINT-DENIS ⭐ <span class="outline">20 ET 21 MARS 2026</span> ⭐ MOTEUR ACTION !
+        </div>
+        <div class="marquee-text">
+          ⭐ <span class="outline">CHÂTEL-SAINT-DENIS</span> ⭐ 20 ET 21 MARS 2026 ⭐ <span class="outline">MOTEUR ACTION !</span>
+        </div>
+        <div class="marquee-text">
+          ⭐ CHÂTEL-SAINT-DENIS ⭐ <span class="outline">20 ET 21 MARS 2026</span> ⭐ MOTEUR ACTION !
+        </div>
+        <div class="marquee-text">
+          ⭐ <span class="outline">CHÂTEL-SAINT-DENIS</span> ⭐ 20 ET 21 MARS 2026 ⭐ <span class="outline">MOTEUR ACTION !</span>
+        </div>
+        <div class="marquee-text">
+          ⭐ CHÂTEL-SAINT-DENIS ⭐ <span class="outline">20 ET 21 MARS 2026</span> ⭐ MOTEUR ACTION !
+        </div>
+        <div class="marquee-text">
+          ⭐ <span class="outline">CHÂTEL-SAINT-DENIS</span> ⭐ 20 ET 21 MARS 2026 ⭐ <span class="outline">MOTEUR ACTION !</span>
+        </div>
+        <div class="marquee-text">
+          ⭐ CHÂTEL-SAINT-DENIS ⭐ <span class="outline">20 ET 21 MARS 2026</span> ⭐ MOTEUR ACTION !
+        </div>
+    </div>
+  </div>
+</body>
+</html>

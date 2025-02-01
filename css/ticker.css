@@ -1,0 +1,61 @@
+:root {
+    --speed: 240s; /* Durée du défilement */
+}
+
+.ticker-wrapper{
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    transform: rotate(-2deg);
+    z-index: 1;
+    margin-top: -3rem;
+}
+.ticker-container {
+    background: var(--pink);
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+    margin-left: -1rem;
+}
+
+.ticker-banner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    min-width: 100%;
+}
+
+    .ticker-banner span {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "AlumniSansBold";
+}
+
+.ticker-banner span.ticker-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--white); /* Adds white outline */
+}
+
+.star-icon::before {
+    content: "★";
+    color: var(--white);
+    font-size: 2rem;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Duplication pour effet infini */
+.ticker-content {
+    display: inline-flex;
+    animation: scroll var(--speed) linear infinite;
+}

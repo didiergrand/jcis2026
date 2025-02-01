@@ -1,0 +1,106 @@
+/* Header styles */
+.site-header {
+    padding: 1rem;
+    background: linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
+    position: relative;
+    z-index: 100;
+    padding: 0;
+    @media screen and (min-width: 640px) {
+        height: 10rem;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.site-branding {
+}
+
+.site-branding img {
+    width: 20rem;
+    @media screen and (min-width: 1025px) {
+        width: 30rem;
+    }
+    height: auto;
+}
+
+.site-title,
+.site-description {
+    position: absolute;
+    left: -99999px;
+}
+
+.main-navigation {
+    margin-left: auto; /* Pushes nav to the right */
+}
+
+/* Primary menu styling */
+#primary-menu {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: end;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none; /* Hidden by default on desktop */
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#site-navigation #primary-menu li a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+}
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin: 1rem 0;
+        order: 2;
+    }
+
+    .main-navigation {
+        width: 100%;
+        order: 3;
+    }
+
+    #site-navigation #primary-menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        background: var(--bg-gradient1);
+    }
+
+    #site-navigation #primary-menu.toggled {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+}
