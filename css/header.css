@@ -41,8 +41,9 @@
         margin: 0 4rem 0 0;
         flex-direction: row;
     }
-    li{
+    a{
         padding: 1rem;
+        display: flex;
     }
     li a:hover{
         color: var(--pink-400) !important;
@@ -56,6 +57,7 @@
     padding: 0;
     list-style: none;
     justify-content: end;
+    align-items: center;
 }
 
 /* Menu Toggle Button */
@@ -198,4 +200,28 @@
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
+}
+.current_page_item a{
+    color: var(--pink-400) !important;
+}
+.billet{
+    background-image: url('../images/billet.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.billet a{
+    padding: 2rem !important;
+}
+.main-navigation ul{
+    .billet.current_page_item a,
+    .billet a:hover{
+            color: var(--pink-200) !important;
+        }
+    
+}
+.billet.current_page_item,
+.billet:hover{
+    rotate: -10deg;
+    transition: rotate 0.2s ease-in-out;
 }
