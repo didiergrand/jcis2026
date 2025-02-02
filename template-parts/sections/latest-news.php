@@ -1,22 +1,28 @@
 <?php
-// Query posts with the 'actualites' category
+// Déterminer la catégorie en fonction de la langue active
+$lang = pll_current_language(); // Récupère la langue active
+
+
+$category_slug = ($lang === 'de') ? 'actualites-de' : 'actualites';
+
+// Récupérer les articles de la catégorie correspondante
 $hero_banner_query = new WP_Query(array(
-    'category_name' => 'actualites,actualite-de',
+    'category_name' => $category_slug,
     'posts_per_page' => 4,
 ));
 ?>
+
 <section class="news">
     <div class="container">
-<!-- Title -->
-<h3 class="mini-title"><?php 
-    $category = get_category_by_slug('actualites');
-    if (!$category) {
-        $category = get_category_by_slug('actualite-de');
-    }
-    echo $category->name; 
-?></h3>
-<!-- News Grid -->
-        <h2>Les dernières informations</h2>
+        <!-- Title -->
+        <h3 class="mini-title">
+        <?php 
+            $category = get_category_by_slug($category_slug);
+            echo $category->name;
+        ?></h3>
+
+        <!-- News Grid -->
+        <h2><?php echo $category->description; ?></h2>
         <div class="news-grid">
             <?php
             if ($hero_banner_query->have_posts()) :
@@ -33,7 +39,7 @@ $hero_banner_query = new WP_Query(array(
                         <div class="news-card__excerpt">
                             <?php the_excerpt(); ?>
                         </div>
-                        <a href="<?php the_permalink(); ?>" class="news-card__link">Lire la suite</a>
+                        <a href="<?php the_permalink(); ?>" class="news-card__link"><?php _e('Lire la suite', 'textdomain'); ?></a>
                     </div>
                 </div>
             <?php
@@ -44,6 +50,3 @@ $hero_banner_query = new WP_Query(array(
         </div>
     </div>
 </section>
-
-
-

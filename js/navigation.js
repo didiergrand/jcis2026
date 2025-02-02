@@ -16,4 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			menuToggle.setAttribute('aria-expanded', !isExpanded);
 		});
 	}
+
 });
+

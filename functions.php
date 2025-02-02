@@ -143,6 +143,17 @@ function jcis_forum_2026_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar( 
+		array(
+			'name'          => 'Navbar Widget Area',
+			'id'            => 'navbar-widget',
+			'description'   => 'Add widgets here to appear in your navigation bar',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		) 
+	);
 }
 add_action( 'widgets_init', 'jcis_forum_2026_widgets_init' );
 

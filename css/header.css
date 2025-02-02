@@ -70,7 +70,9 @@
     cursor: pointer;
     font-size: 1rem;
 }
-
+#site-navigation #primary-menu li{
+    margin-bottom: 0;
+}
 #site-navigation #primary-menu li a{
     font-size: 1.2rem;
     font-weight: bold;
@@ -224,4 +226,27 @@
 .billet:hover{
     rotate: -10deg;
     transition: rotate 0.2s ease-in-out;
+}
+.widget_polylang{
+    margin-bottom: 0;
+}
+.widget_polylang ul{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+}
+.widget_polylang li{
+    margin-bottom: 0;
+}
+.widget_polylang li:first-child:after{
+    content: '|';
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.widget_polylang a{
+    color: var(--white) !important;
+    text-decoration: none;
+}
+.current-lang a{
+    color: var(--pink-400) !important;
 }

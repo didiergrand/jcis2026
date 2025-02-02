@@ -62,6 +62,13 @@
 				);
 				?>
 			</nav><!-- #site-navigation -->
+			
+			<?php if ( is_active_sidebar( 'navbar-widget' ) ) : ?>
+				<div class="navbar-widget-area">
+					<?php dynamic_sidebar( 'navbar-widget' ); ?>
+				</div>
+			<?php endif; ?>
+			
 		</div><!-- .header-container -->
 	</header><!-- #masthead -->
 

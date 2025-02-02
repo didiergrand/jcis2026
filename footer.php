@@ -9,13 +9,17 @@
  * @package JCIS_Forum_2026
  */
 
+ $lang = pll_current_language(); // Récupère la langue active
+
+
 ?>
 
 	<footer id="colophon" class="site-footer">
 	<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
 			<div class="footer-widgets-area">
 				<div class="container">
-					<h2>Sponsors</h2>
+
+					<h2><?php if ($lang === 'de') : ?>Sponsoren<?php else : ?>Sponsors<?php endif; ?></h2>
 					<div class="sponsors-logos">
 						<?php dynamic_sidebar( 'footer-widgets' ); ?>
 					</div>
