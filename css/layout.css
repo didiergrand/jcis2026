@@ -72,3 +72,23 @@ ul li,ol li{
   aspect-ratio: 1;
   flex-grow: unset !important;
 }
+.post-content-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-direction: column;
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.post-thumbnail {
+  @media only screen and (min-width: 768px) {
+    flex: 0 0 50%;
+  }
+}
+
+.post-content-wrapper .entry-content {
+  flex: 1;
+  margin-top: 0;
+}

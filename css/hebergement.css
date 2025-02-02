@@ -1,0 +1,35 @@
+.hebergement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.hebergement-card {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hebergement-thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hebergement-content {
+    padding: 1.5rem;
+}
+
+.hebergement-title {
+    margin: 0 0 1rem;
+}
+
+.hebergement-title a {
+    text-decoration: none;
+}
+
+.hebergement-excerpt {
+    margin-bottom: 1rem;
+}

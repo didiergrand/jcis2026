@@ -9,8 +9,8 @@
 }
 
 .news-card {
-    background: #fff;
-    border-radius: 8px;
+    background: var(--white);
+    border-radius: var(--radius);
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -28,7 +28,7 @@
 }
 
 .news-card__content {
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .news-card__title {
