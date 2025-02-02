@@ -1,7 +1,7 @@
 <?php
 // Query posts with the 'actualites' category
 $hero_banner_query = new WP_Query(array(
-    'category_name' => 'actualites',
+    'category_name' => 'actualites,actualite-de',
     'posts_per_page' => 4,
 ));
 ?>
@@ -10,7 +10,10 @@ $hero_banner_query = new WP_Query(array(
 <!-- Title -->
 <h3 class="mini-title"><?php 
     $category = get_category_by_slug('actualites');
-    echo $category->name; 
+    if (!$category) {
+        $category = get_category_by_slug('actualite-de');
+    }
+    echo $category ? $category->name : ''; 
 ?></h3>
 <!-- News Grid -->
 <h2>Les dernières informations</h2>
