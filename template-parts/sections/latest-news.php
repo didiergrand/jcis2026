@@ -13,10 +13,10 @@ $hero_banner_query = new WP_Query(array(
     if (!$category) {
         $category = get_category_by_slug('actualite-de');
     }
-    echo $category ? $category->name : ''; 
+    echo $category->name; 
 ?></h3>
 <!-- News Grid -->
-<h2>Les dernières informations</h2>
+        <h2>Les dernières informations</h2>
         <div class="news-grid">
             <?php
             if ($hero_banner_query->have_posts()) :
