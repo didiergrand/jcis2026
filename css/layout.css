@@ -11,6 +11,10 @@ body{
   a:active{
     color: var(--pink-900);
   }
+  a:focus,
+  a:visited{
+    color: var(--pink);
+  }
   .container{
     max-width: 1200px;
     margin: 0 auto;
