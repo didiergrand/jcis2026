@@ -15,6 +15,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .site-branding img {
@@ -85,8 +87,6 @@
     .header-container {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        max-width: 1440px;
-        margin: 0 auto;
     }
 
     .menu-toggle {
@@ -141,9 +141,6 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 7px 14px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
         &:hover{
             background-color: transparent !important;
         }
@@ -228,6 +225,11 @@
 .billet:hover{
     rotate: -10deg;
     transition: rotate 0.2s ease-in-out;
+}
+.navbar-widget-area{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 .widget_polylang{
     margin-bottom: 0;
