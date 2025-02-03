@@ -230,7 +230,9 @@
 .navbar-widget-area{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    @media screen and (min-width: 1024px) {
+        gap: 1rem;
+    }
     flex-direction: row-reverse;
 }
 .widget_polylang{
@@ -240,6 +242,7 @@
     list-style-type: none;
     display: flex;
     margin-bottom: 0;
+    padding: 0;
 }
 .widget_polylang li{
     margin-bottom: 0;
