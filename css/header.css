@@ -85,6 +85,8 @@
     .header-container {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     .menu-toggle {

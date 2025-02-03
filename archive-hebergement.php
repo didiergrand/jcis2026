@@ -3,7 +3,11 @@
  * Template Name: Archive Hébergement
  * Description: Page qui affiche tous les posts de la catégorie hébergement
  */
+// Déterminer la catégorie en fonction de la langue active
+$lang = pll_current_language(); // Récupère la langue active
 
+
+$category_slug = ($lang === 'de') ? 'hebergement-de' : 'hebergement';
 get_header(); ?>
 
 <main id="primary" class="site-main light-section">
@@ -14,7 +18,7 @@ get_header(); ?>
         <?php
         $args = array(
             'post_type' => 'post',
-            'category_name' => 'hebergement',
+            'category_name' => $category_slug,
             'posts_per_page' => -1,
             'orderby' => 'date',
             'order' => 'DESC'
