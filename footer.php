@@ -15,6 +15,22 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+
+	<?php if ( is_active_sidebar( 'prefooter-widgets-left' ) || is_active_sidebar( 'prefooter-widgets-right' ) ) : ?>
+		<div class="prefooter-widgets-area">
+			<div class="container">
+				<div class="prefooter-grid">
+					<div class="prefooter-column">
+						<?php dynamic_sidebar( 'prefooter-widgets-left' ); ?>
+					</div>
+					<div class="prefooter-column">
+						<?php dynamic_sidebar( 'prefooter-widgets-right' ); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
+
 	<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
 			<div class="footer-widgets-area">
 				<div class="container">

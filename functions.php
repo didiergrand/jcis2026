@@ -154,6 +154,30 @@ function jcis_forum_2026_widgets_init() {
 			'after_title'   => '</h2>',
 		) 
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Pre-Footer Left', 'jcis-forum-2026' ),
+			'id'            => 'prefooter-widgets-left',
+			'description'   => esc_html__( 'Add widgets here for the left pre-footer column.', 'jcis-forum-2026' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Pre-Footer Right', 'jcis-forum-2026' ),
+			'id'            => 'prefooter-widgets-right',
+			'description'   => esc_html__( 'Add widgets here for the right pre-footer column.', 'jcis-forum-2026' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'jcis_forum_2026_widgets_init' );
 
@@ -199,3 +223,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+function custom_translate_read_more($more) {
+    if (function_exists('pll_current_language')) {
+        $lang = pll_current_language();
+        
+        if ($lang == 'fr') {
+            return ' <a class="more-link" href="' . get_permalink() . '">En savoir plus</a>';
+        } elseif ($lang == 'de') {
+            return ' <a class="more-link" href="' . get_permalink() . '">Mehr lesen</a>';
+        } else {
+            return ' <a class="more-link" href="' . get_permalink() . '">Read More</a>';
+        }
+    }
+    return $more;
+}
+add_filter('the_content_more_link', 'custom_translate_read_more');

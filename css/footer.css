@@ -36,3 +36,23 @@
         }
     }
 }
+.prefooter-widgets-area {
+    padding: 40px 0;
+    p{
+        font-size: 1rem
+    }
+}
+.home .prefooter-widgets-area {
+    background-color: var(--bg-gradient1);
+}
+.prefooter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .prefooter-grid {
+        grid-template-columns: 1fr;
+    }
+}

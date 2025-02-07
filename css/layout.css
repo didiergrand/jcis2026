@@ -101,3 +101,21 @@ ul li,ol li{
   border: none;
   color: var(--white);
 }
+a.more-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+a.more-link:hover {
+    background-color: var(--pink-900);
+    color: var(--white);
+}
