@@ -21,10 +21,18 @@
 			<div class="container">
 				<div class="prefooter-grid">
 					<div class="prefooter-column">
-						<?php dynamic_sidebar( 'prefooter-widgets-left' ); ?>
+						<?php if ($lang === 'de') : ?>
+							<?php dynamic_sidebar( 'prefooter-widgets-left-de' ); ?>
+						<?php else : ?>
+							<?php dynamic_sidebar( 'prefooter-widgets-left' ); ?>
+						<?php endif; ?>
 					</div>
 					<div class="prefooter-column">
-						<?php dynamic_sidebar( 'prefooter-widgets-right' ); ?>
+						<?php if ($lang === 'de') : ?>
+							<?php dynamic_sidebar( 'prefooter-widgets-right-de' ); ?>
+						<?php else : ?>
+							<?php dynamic_sidebar( 'prefooter-widgets-right' ); ?>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>
@@ -34,7 +42,6 @@
 	<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
 			<div class="footer-widgets-area">
 				<div class="container">
-
 					<h2><?php if ($lang === 'de') : ?>Sponsoren<?php else : ?>Sponsors<?php endif; ?></h2>
 					<div class="sponsors-logos">
 						<?php dynamic_sidebar( 'footer-widgets' ); ?>
@@ -45,7 +52,7 @@
 		
 		<div class="container">
 		<div class="site-info">
-		<div>Jeune Chambre Internationale de la Veveyse | </div><div><img src="<?php echo get_template_directory_uri(); ?>/images/digitalgarage.svg" alt="Digitalgarage - Création web & stratégie digitale" width="16"> webdesign & code : Didier Grand - <a href="https://digitalgarage.ch?ref=jcis-forum-2026" target="_blank" title="Digitalgarage - Création web & stratégie digitale">digitalgarage.ch</a>
+		<div>Jeune Chambre Internationale de la Veveyse | </div><div><img src="<?php echo get_template_directory_uri(); ?>/images/digitalgarage.svg" alt="Digitalgarage - Création web & stratégie digitale" width="16"> webdesign & code : Didier Grand - <a href="https://digitalgarage.ch?ref=jcis-forum-2026" target="_blank" title="Digitalgarage - Création web & stratégie digitale">digitalgarage.ch</a>
 		</div></div>
 		</div>
 	</footer><!-- #colophon -->

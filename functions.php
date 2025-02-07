@@ -157,7 +157,7 @@ function jcis_forum_2026_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Pre-Footer Left', 'jcis-forum-2026' ),
+			'name'          => esc_html__( 'Prefooter Widgets Left', 'jcis-forum-2026' ),
 			'id'            => 'prefooter-widgets-left',
 			'description'   => esc_html__( 'Add widgets here for the left pre-footer column.', 'jcis-forum-2026' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -169,7 +169,7 @@ function jcis_forum_2026_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Pre-Footer Right', 'jcis-forum-2026' ),
+			'name'          => esc_html__( 'Prefooter Widgets Right', 'jcis-forum-2026' ),
 			'id'            => 'prefooter-widgets-right',
 			'description'   => esc_html__( 'Add widgets here for the right pre-footer column.', 'jcis-forum-2026' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -178,6 +178,26 @@ function jcis_forum_2026_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(array(
+		'name'          => 'Prefooter Widgets Left (DE)',
+		'id'            => 'prefooter-widgets-left-de',
+		'description'   => 'Zone de widgets pour le prefooter gauche en allemand',
+		'before_widget' => '<div class="widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	));
+
+	register_sidebar(array(
+		'name'          => 'Prefooter Widgets Right (DE)',
+		'id'            => 'prefooter-widgets-right-de',
+		'description'   => 'Zone de widgets pour le prefooter droit en allemand',
+		'before_widget' => '<div class="widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	));
 }
 add_action( 'widgets_init', 'jcis_forum_2026_widgets_init' );
 
