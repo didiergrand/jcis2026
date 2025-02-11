@@ -259,3 +259,8 @@ function custom_translate_read_more($more) {
     return $more;
 }
 add_filter('the_content_more_link', 'custom_translate_read_more');
+
+function jcis_forum_2026_load_theme_textdomain() {
+    load_theme_textdomain( 'jcis-forum-2026', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'jcis_forum_2026_load_theme_textdomain' );
