@@ -10,6 +10,9 @@ $hero_banner_query = new WP_Query(array(
     'category_name' => $category_slug,
     'posts_per_page' => 4,
 ));
+
+// N'afficher la section que s'il y a des articles
+if ($hero_banner_query->have_posts()) :
 ?>
 
 <section class="news">
@@ -25,8 +28,7 @@ $hero_banner_query = new WP_Query(array(
         <h2><?php echo $category->description; ?></h2>
         <div class="news-grid">
             <?php
-            if ($hero_banner_query->have_posts()) :
-                while ($hero_banner_query->have_posts()) : $hero_banner_query->the_post();
+            while ($hero_banner_query->have_posts()) : $hero_banner_query->the_post();
             ?>
                 <div class="news-card">
                     <?php if (has_post_thumbnail()) : ?>
@@ -43,10 +45,13 @@ $hero_banner_query = new WP_Query(array(
                     </div>
                 </div>
             <?php
-                endwhile;
-                wp_reset_postdata();
-            endif;
+            endwhile;
             ?>
         </div>
     </div>
 </section>
+
+<?php 
+endif;
+wp_reset_postdata();
+?>
