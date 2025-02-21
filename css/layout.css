@@ -50,15 +50,15 @@ body{
     transition: all 0.3s ease;
     text-transform: uppercase;
 }
+.wp-block-button__link:visited{
+  background-color: var(--pink);
+  color: var(--white);
+}
 .wp-block-button__link:active,
 .wp-block-button__link:focus,
 .wp-block-button__link:hover{
     background-color: var(--pink-900);
     color: var(--white);
-}
-.wp-block-button__link:visited{
-  background-color: var(--pink);
-  color: var(--white);
 }
 .light-section{
   background: linear-gradient(to right, var(--bg-gradient3), var(--bg-gradient4));
