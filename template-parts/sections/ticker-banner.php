@@ -10,121 +10,121 @@ if ($lang === 'de') {?>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span>Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span>Motor Aktion!</span>
+            <span>Kamera, Aktion!</span>
             <span class="star-icon"></span>
             <span class="ticker-outline">Châtel-Saint-Denis</span>
             <span class="star-icon"></span>
             <span>20. und 21. März 2026</span>
             <span class="star-icon"></span>
-            <span class="ticker-outline">Motor Aktion!</span>
+            <span class="ticker-outline">Kamera, Aktion!</span>
         </div>
     </div>
 </div>
